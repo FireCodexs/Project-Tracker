@@ -93,9 +93,9 @@ window.onload = function() {
   //this if statement will give the color based on what time of the day it is
 if(currentTextareaHour === currentTime) {
   $("textarea").eq(i).addClass("present")
-} else if(currentTextareaHour > currentTime) {
-  $("textarea").eq(i).addClass("past")
 } else if(currentTextareaHour < currentTime) {
+  $("textarea").eq(i).addClass("past")
+} else if(currentTextareaHour > currentTime) {
    $("textarea").eq(i).addClass("future")
 }
 }
